@@ -7,6 +7,18 @@
 </ion-header>
 
 <ion-content padding>
+<button ion-button full icon-left (click)="scanear()" round color="dark">
+  <ion-icon name="qr-scanner">
+</ion-icon>Escanear codigo</button>
 
+<ion-card *ngIf="escaneo">
+  <ion-card-content>
+   <p>Nombre: {{nombre}}</p> 
+   <p>Apellido: {{apellido}}</p> 
+   <p>Numero: {{numero}}</p>  
+  
+
+  </ion-card-content>
+</ion-card>
 
 </ion-content>
