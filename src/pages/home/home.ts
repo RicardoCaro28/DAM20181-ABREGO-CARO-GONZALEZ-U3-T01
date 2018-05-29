@@ -10,8 +10,16 @@ import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/cont
 })
 export class HomePage {
  
+  escaneo = null;
+  cadena: string = "";
+  nombre: string = "";
+  apellido: string = "";
+  numero: string = "";
+  x: any;
 
-  constructor(public navCtrl: NavController) {
+
+  constructor(public navCtrl: NavController, private barcodescanner: BarcodeScanner,
+    private contacts: Contacts, public toast: ToastController) {
 
   }
 
